@@ -1,0 +1,21 @@
+# Site settings
+title: "阿赛"
+logo: avatar.jpg
+email: 1770259258@qq.com
+description: > # this means to ignore newlines until "url:"
+阿赛课堂-电商插画学员班，电商插画培训，教程，上课，在线视频
+url: "http://wugegewu.github.io" # the base hostname & protocol for your site
+baseurl: "/asai" # the subpath of your site, e.g. /blog/
+twitter_username: anonymous
+github_username:  wugegewu
+
+permalink: pretty
+paginate: 5
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
