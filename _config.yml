@@ -9,14 +9,6 @@ baseurl: "/asai" # the subpath of your site, e.g. /blog/
 twitter_username: anonymous
 github_username:  wugegewu
 
-include: ["phase"]
-defaults:
-  -
-    scope:
-      path: "phase"
-    values:
-      layout: "default"
-
 permalink: pretty
 paginate: 5
 
