@@ -3,84 +3,455 @@ layout: default
 ---
 <div class="page">
     <div class="container">
-        <div class="w1920 h-rel" style="background:url(https://img.alicdn.com/imgextra/i1/279632624/TB2GCnwaNr9F1JjSZPfXXawbFXa_!!279632624.jpg) no-repeat center top fixed;">
+        <div class="w1920 h-rel">
             <style>
-            .main-content {width:1038px;margin:0 auto;}
-            .main-content .content {background-color:rgba(50,63,77,0.7);}
-            .tran {transition-duration:0.8s;transition-timing-function:ease-out;}
+            .tran {transition-duration:0.4s;transition-timing-function:ease-out;}
+            .opacity-01 {opacity:0;}
+            .opacity-01:hover {opacity:1;}
             .rotate-01:hover {transform:rotate(360deg);}
+            .effect-01 {opacity:0;top:560px;}
+            .activate:hover .effect-01 {opacity:1;top:0;}
+
+            .carousel-indicators {bottom:-55px;}
+            .carousel-indicators li {width:16px;height:16px;margin:4px 5px;border:2px solid #dc5c6e;background:#1a569d;border-radius:50%;}
+            .carousel-indicators li.active {width:24px;height:24px;margin:0px 1px;background:#7d181d;border:4px solid #dc5c6e;}
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .glyphicon-chevron-right {width:72px;height:72px;}
+            .carousel-control .glyphicon-chevron-left:before,
+            .carousel-control .glyphicon-chevron-right:before {display:none;}
+            .carousel-control .glyphicon-chevron-left {margin-left:-36px;margin-top:-36px;background:url(https://img.alicdn.com/imgextra/i1/279632624/O1CN01FReQgV1VFpmtraX4p_!!279632624.png) no-repeat;}
+            .carousel-control .glyphicon-chevron-right {margin-right:-36px;margin-top:-36px;background:url(https://img.alicdn.com/imgextra/i1/279632624/O1CN01FReQgV1VFpmtraX4p_!!279632624.png) no-repeat -72px 0;}
+            .carousel-control.left,
+            .carousel-control.right {background:none;opacity:1;}
+            .carousel-control.left {left:-13%;}
+            .carousel-control.right {right:-13%;}
+            .carousel-control.left:hover .glyphicon-chevron-left {background:url(https://img.alicdn.com/imgextra/i1/279632624/O1CN01FReQgV1VFpmtraX4p_!!279632624.png) no-repeat 0 -72px;}
+            .carousel-control.right:hover .glyphicon-chevron-right {background:url(https://img.alicdn.com/imgextra/i1/279632624/O1CN01FReQgV1VFpmtraX4p_!!279632624.png) no-repeat -72px -72px;}
+            #carousel-case-01 .carousel-indicators {display:none;}
+            #carousel-case-02 .carousel-indicators {bottom:10px;}
+            #carousel-case-02 .carousel-control {display:none;}
+            #carousel-case-03 .carousel-indicators {display:none;}
+
+            .opus-box {width:1200px;height:515px;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;align-content:space-between;}
+            .opus-box .opus-list {flex:none;position:relative;overflow:hidden;}
+            .opus-box .opus-list .cover-mask {position:absolute;left:0;top:0;width:100%;height:100%;}
+            .opus-box .opus-list .opus-desc-text {display:flex;justify-content:center;align-items:center;font-size:18px;color:#fff;background-color:rgba(0,0,0,0.5);opacity:0;top:100%;transition-duration:0.3s;}
+            .activate:hover .opus-desc-text {opacity:1;top:0;}
+
+            .modal-content {background-color:rgba(0,0,0,0.75);}
+            .modal-content .modal-header {padding-top:10px;border-bottom:none;}
+            .modal-content .modal-header .close {position:relative;color:#fff;opacity:0.5;}
+            .modal-content .modal-header .close:hover {opacity:0.8;}
+            .modal-content .modal-body {padding-top:0;padding-left:20px;padding-right:20px;}
+            .modal-content .student-leaveword {color:#fff;font-size:14px;}
+            .modal-content .student-leaveword > strong {font-size:20px;}
             </style>
-            <div class="h-rel main-content">
-                <img src="https://img.alicdn.com/imgextra/i1/279632624/TB2RnsPX0GgF1JjSspeXXaZxVXa_!!279632624.png" />
-                <div class="content">
-                    <div class="h-rel" style="padding-top:30px;padding-left:40px;padding-right:38px;">
-                        <table width="960" height="790" border="0" cellpadding="0" cellspacing="0">
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2qeKeajifF1Jjy1zkXXX0pVXa_!!279632624.png" width="960" height="230" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2o69dacSfF1JjSsplXXbrKFXa_!!279632624.png" width="960" height="160" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB25WqiaoafF1Jjy1XbXXaYiXXa_!!279632624.png" width="960" height="400" alt=""></td></tr>
-                        </table>
-                        <div class="h-abs" data-compon="area" style="left:185px;top:432px;"><a style="display:block;width:240px;height:270px;text-decoration:none;" href="https://wugegewu.github.io/asai/phase/2.html" target="_blank">&nbsp;</a></div>
-                        <div class="h-abs" data-compon="area" style="left:473px;top:432px;"><a style="display:block;width:240px;height:270px;text-decoration:none;" href="https://wugegewu.github.io/asai/phase/3.html" target="_blank">&nbsp;</a></div>
-                        <div class="h-abs" data-compon="area" style="left:760px;top:432px;"><a style="display:block;width:240px;height:270px;text-decoration:none;" href="https://wugegewu.github.io/asai/phase/4.html" target="_blank">&nbsp;</a></div>
-                        <div class="h-abs" data-compon="pair" style="left:196px;top:445px;"><a class="tran rotate-01" style="display:block;width:218px;height:218px;text-decoration:none;" href="https://wugegewu.github.io/asai/phase/2.html" target="_blank"><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2PscwaZr_F1JjSZFvXXcmJVXa_!!279632624.png" /></a></div>
-                        <div class="h-abs" data-compon="pair" style="left:485px;top:445px;"><a class="tran rotate-01" style="display:block;width:218px;height:218px;text-decoration:none;" href="https://wugegewu.github.io/asai/phase/3.html" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/279632624/TB28566a3AEF1JjSZFLXXbzNXXa_!!279632624.png" /></a></div>
-                        <div class="h-abs" data-compon="pair" style="left:778px;top:445px;"><a class="tran rotate-01" style="display:block;width:218px;height:218px;text-decoration:none;" href="https://wugegewu.github.io/asai/phase/4.html" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2et3ua7z_F1JjSZFkXXcCaXXa_!!279632624.png" /></a></div>
+            <table width="1920" height="12609" border="0" cellpadding="0" cellspacing="0">
+                <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01SBTq5l1VFpmuDO11S_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01u2DkeP1VFpmwVdYqm_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01p74wtx1VFpmwU6ky1_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN013rkTWQ1VFpmoZlnE0_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Xn2cNz1VFpmxgSLxk_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01gYF5WF1VFpmt5wgId_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01YwZTJO1VFpmxxwVnE_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01Lw19Yf1VFpmvHmdrQ_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01fpciPd1VFpmx6oQ4c_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01REIycW1VFpmt5xLuX_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01JOvMMA1VFpmt5wDDl_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01wtm53B1VFpmyH052D_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01NwlBVN1VFpmwU4kH8_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01yFnyLl1VFpmvbarx4_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01NetEu41VFpmwbdoYq_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01pnadJ31VFpmwU6QH5_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01GyEIZC1VFpmuDPMEv_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01Ggc9cS1VFpmyGzg90_!!279632624.png" width="1920" height="630" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01kXviQG1VFpmxxy3Sc_!!279632624.png" width="1920" height="631" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN014wHhSv1VFpmvbcPcD_!!279632624.png" width="1920" height="470" alt=""></td></tr>
+                <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN015HtYsk1VFpmt5wgOa_!!279632624.png" width="1920" height="160" alt=""></td></tr>
+            </table>
+            <div class="h-abs" data-compon="pair" style="left:391px;top:1897px;"><a class="tran opacity-01" style="display:block;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Vx0BBI1VFpmoZo4el_!!279632624.png"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:849px;top:1899px;"><a class="tran opacity-01" style="display:block;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Vx0BBI1VFpmoZo4el_!!279632624.png"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:1307px;top:1900px;"><a class="tran opacity-01" style="display:block;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Vx0BBI1VFpmoZo4el_!!279632624.png"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:849px;top:2827px;"><a class="tran opacity-01" style="display:block;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Vx0BBI1VFpmoZo4el_!!279632624.png"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:936px;top:3290px;"><a class="tran opacity-01" style="display:block;width:220px;height:56px;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:849px;top:8453px;"><a class="tran opacity-01" style="display:block;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Vx0BBI1VFpmoZo4el_!!279632624.png"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:849px;top:11142px;"><a class="tran opacity-01" style="display:block;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01Vx0BBI1VFpmoZo4el_!!279632624.png"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:831px;top:12173px;"><a class="tran opacity-01" style="display:block;width:259px;height:56px;text-decoration:none;" onclick="contactQQ();" href="javascript:void(0);"></a></div>
+
+            <div class="h-abs activate" data-compon="html" style="left:360px;top:4138px;width:580px;height:560px;overflow:hidden;"><div class="h-abs tran effect-01" style="display:block;width:580px;height:560px;"><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01tZWLZK1VFpmwU6M8u_!!279632624.png" /></div></div>
+            <div class="h-abs activate" data-compon="html" style="left:983px;top:4138px;width:577px;height:560px;overflow:hidden;"><div class="h-abs tran effect-01" style="display:block;width:577px;height:560px;"><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01QlKJTc1VFpmvHoBb0_!!279632624.png" /></div></div>
+
+            <div class="h-abs" data-compon="html" style="left:360px;top:4846px;width:1200px;height:515px;">
+                <div id="carousel-case-01" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-case-01" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-case-01" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="opus-box">
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01KSoxfH1VFpmvbcD9q_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 老金磨方二十四节气 -</div>
+                                    <a class="cover-mask" href="https://www.zcool.com.cn/work/ZMzE3NDg0OTI=.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01iRuCcY1VFpmtrb8Td_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 老金磨坊三八节首页 -</div>
+                                    <a class="cover-mask" href="https://www.zcool.com.cn/work/ZMzMxOTY5NDQ=.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01A8jlpY1VFpmwVfhzz_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 无限能中秋首页kv方案 -</div>
+                                    <a class="cover-mask" href="https://www.zcool.com.cn/work/ZMzAzNTIxNjQ=.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01EB7BrH1VFpmvesoRD_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 老金磨方年货节页面 -</div>
+                                    <a class="cover-mask" href="https://www.zcool.com.cn/work/ZMzMxOTY5NDQ=.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01z3pVyZ1VFpmyH1YY7_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 老金磨方双十一预售首页 -</div>
+                                    <a class="cover-mask" href="https://www.zcool.com.cn/work/ZMzE0MzgyNzI=.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01XJWfde1VFpmtrajZQ_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 珀莱雅24节气 -</div>
+                                    <a class="cover-mask" href="https://www.zcool.com.cn/work/ZMzE3NDI2ODA=.html" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="opus-box">
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01ligVm01VFpmuDO9TU_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 猪肉铺包装袋 -</div>
+                                    <a class="cover-mask" href="http://www.zhisheji.com/yuanchuang/1266052.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01EmTo081VFpmt5zdKG_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 玩转复古风 -</div>
+                                    <a class="cover-mask" href="http://www.zhisheji.com/yuanchuang/1158807.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01NXsOuV1VFpmwVf6aZ_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 小匠新年礼 -</div>
+                                    <a class="cover-mask" href="http://www.zhisheji.com/yuanchuang/1165909.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01ZunA5n1VFpmoZnCcs_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 巧匠课堂IP形象诞生 -</div>
+                                    <a class="cover-mask" href="http://www.zhisheji.com/yuanchuang/1168315.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01TzCGpb1VFpmwVhJoE_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 致设计欢迎墙 -</div>
+                                    <a class="cover-mask" href="http://www.zhisheji.com/yuanchuang/1164488.html" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01OCDhan1VFpmvew21D_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text">- 五周年周边插图 -</div>
+                                    <a class="cover-mask" href="http://www.zhisheji.com/yuanchuang/1209123.html" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div style="padding-left:200px;">
-                        <table width="800" height="20292" border="0" cellpadding="0" cellspacing="0">
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2JOmgadqgF1JjSsppXXaBNXXa_!!279632624.png" width="800" height="73" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2nwugaiefF1JjSspmXXcGeXXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2ueSeajifF1Jjy1zkXXX0pVXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2YbSda9_9F1JjSZFrXXcrVFXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2G_yhah9fF1Jjy1XcXXc_rVXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB21Tmea4z_F1JjSZFIXXcxHVXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2WT0za9.EF1JjSZPcXXaxaFXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB21n1daYL9F1JjSZFwXXcSuVXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2Zxmha9z9F1JjSZFMXXXmNXXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2qPafa4f9F1JjSZFyXXXnOFXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB24Haaa969F1JjSZPiXXXfCXXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2BWyca7z_F1JjSZFkXXcCaXXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2AYBMa3AEF1JjSZFLXXbzNXXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2HZeda9_9F1JjSZFrXXcrVFXa_!!279632624.jpg" width="800" height="487" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2czmfa4f9F1JjSZFyXXXnOFXa_!!279632624.png" width="800" height="89" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2_CGfaV6.F1JjSZFpXXcZjXXa_!!279632624.jpg" width="800" height="389" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2sX9gaZr_F1JjSZFoXXbVRXXa_!!279632624.png" width="800" height="94" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB27kKdaZH_F1JjSZFKXXbcvFXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2QGejaYH9F1JjSZFBXXc9ZFXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2JxOeaVT.F1JjSZFEXXc1TVXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2AA9faoifF1JjSspnXXa5pVXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2z9VJagL8F1JjSszgXXarfpXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2K.5haiqfF1Jjy0FcXXcLdFXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2WitJabT8F1Jjy0FgXXX3fpXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2Du0KalP8F1JjSszdXXcG6XXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB22K0KalP8F1JjSszdXXcG6XXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2E5WgadqgF1JjSsppXXaBNXXa_!!279632624.jpg" width="800" height="537" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2EvOfaoyfF1Jjy0FiXXaCmFXa_!!279632624.png" width="800" height="76" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB202uhacSfF1JjSspbXXcSkVXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2T3tKabH8F1Jjy1zbXXaVNVXa_!!279632624.jpg" width="800" height="524" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2y6JJagL8F1JjSszbXXbguVXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2qnXJagL8F1JjSszgXXarfpXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB21dmfa4z9F1JjSZFsXXaCGVXa_!!279632624.jpg" width="800" height="524" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB23eqcaYL9F1JjSZJiXXcDGpXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2bctMa3AEF1JjSZFLXXbzNXXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2WeWgaYL9F1JjSZFlXXa2sVXa_!!279632624.jpg" width="800" height="524" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2PlmaaV_.F1JjSZFjXXahnXXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB23Ieaa969F1JjSZPiXXXfCXXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i1/279632624/TB2nW5jaYH9F1JjSZFBXXc9ZFXa_!!279632624.jpg" width="800" height="524" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i3/279632624/TB2dwmeaiGfF1Jjy0FjXXXZdVXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2XAyeaoefF1Jjy1zeXXXoupXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i2/279632624/TB2KyGha9z9F1JjSZFMXXXmNXXa_!!279632624.jpg" width="800" height="524" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2bo1caZr_F1JjSZFvXXcmJVXa_!!279632624.jpg" width="800" height="525" alt=""></td></tr>
-                        </table>
-                    </div>
-                    <div style="padding-left:198px;padding-bottom:140px;">
-                        <table width="804" height="1519" border="0" cellpadding="0" cellspacing="0">
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2Q8SgajmfF1JjSspcXXXZMXXa_!!279632624.png" width="804" height="808" alt=""></td></tr>
-                            <tr><td><img src="https://img.alicdn.com/imgextra/i4/279632624/TB2ICaeadWgF1Jjy0FhXXbeEFXa_!!279632624.png" width="804" height="711" alt=""></td></tr>
-                        </table>
-                    </div>
+                    <a class="left carousel-control" href="#carousel-case-01" role="button" data-slide="prev"><span class="glyphicon-chevron-left"></span><span class="sr-only">Prev</span></a>
+                    <a class="right carousel-control" href="#carousel-case-01" role="button" data-slide="next"><span class="glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
                 </div>
+            </div>
+            <div class="h-abs" data-compon="html" style="left:360px;top:8864px;width:1200px;height:552px;">
+                <div id="carousel-case-02" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-case-02" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-case-02" data-slide-to="1"></li>
+                        <li data-target="#carousel-case-02" data-slide-to="2"></li>
+                        <li data-target="#carousel-case-02" data-slide-to="3"></li>
+                        <li data-target="#carousel-case-02" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active"><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01MNpNMM1VFpmt5xtEZ_!!279632624.png"></div>
+                        <div class="item"><img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN013ClLiO1VFpmvesoT6_!!279632624.png"></div>
+                        <div class="item"><img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01TaukYS1VFpmtrcPUF_!!279632624.png"></div>
+                        <div class="item"><img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01KNTKmK1VFpmx6q677_!!279632624.png"></div>
+                        <div class="item"><img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01WVOufI1VFpmt5y5j1_!!279632624.png"></div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-case-02" role="button" data-slide="prev"><span class="glyphicon-chevron-left"></span><span class="sr-only">Prev</span></a>
+                    <a class="right carousel-control" href="#carousel-case-02" role="button" data-slide="next"><span class="glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                </div>
+                <div class="h-abs" style="left:-37px;top:178px;"><img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01PAyBvP1VFpmt5x5Lb_!!279632624.png" /></div>
+                <div class="h-abs" style="right:-37px;top:178px;"><img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01CEjOwU1VFpmvHmJ8z_!!279632624.png" /></div>
+            </div>
+            <div class="h-abs" data-compon="html" style="left:360px;top:9728px;width:1200px;height:515px;">
+                <div id="carousel-case-03" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-case-03" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-case-03" data-slide-to="1"></li>
+                        <li data-target="#carousel-case-03" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="opus-box">
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01iVz04z1VFpmv1KSq0_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i2/279632624/O1CN01xVJDe21VFpmvDxfOt_!!279632624.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01BTiQFQ1VFpmwbcsT1_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-2.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01aG3Cjt1VFpmwbdPjl_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i4/279632624/O1CN01ZvcpHC1VFpmxE5QsI_!!279632624.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01mz2fb81VFpmuDPICB_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i3/279632624/O1CN01NbF4ya1VFpmw9lZgl_!!279632624.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01L9oRRn1VFpmvfzhuS_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i4/279632624/O1CN01iNJP6j1VFpmw1nnZR_!!279632624.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01kNlSdK1VFpmvevpb3_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i1/279632624/O1CN015nuoOP1VFpmuZFnv5_!!279632624.jpg" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="opus-box">
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01WFqzjm1VFpmv1MTaE_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i3/279632624/O1CN01A7UH9I1VFpmvCbzyJ_!!279632624.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01MG2N5g1VFpmxxximQ_!!279632624.jpg" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-8.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01TL5r4d1VFpmyH0t5z_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i3/279632624/O1CN01mZH8451VFpmtPVs6o_!!279632624.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01sMG3bB1VFpmyH1pFM_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-10.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01hQd5l81VFpmveu9fc_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-11.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01UvaKVy1VFpmvbcgLh_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-12.png" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="opus-box">
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i1/279632624/O1CN01N8IOy51VFpmvev1ia_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="https://img.alicdn.com/imgextra/i2/279632624/O1CN01UqEnc31VFpmw43FCt_!!279632624.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01J1sRMW1VFpmuDPpSx_!!279632624.jpg" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-14.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN01fsnYa91VFpmwU9qR1_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-15.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i4/279632624/O1CN01ukQeeA1VFpmyH2lQp_!!279632624.jpg" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-17.jpg" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i2/279632624/O1CN01IWhGl21VFpmwU9J9t_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-18.png" target="_blank"></a>
+                                </div>
+                                <div class="opus-list activate">
+                                    <img src="https://img.alicdn.com/imgextra/i3/279632624/O1CN019XPAXV1VFpmvfzEqE_!!279632624.png" />
+                                    <div class="cover-mask opus-desc-text"></div>
+                                    <a class="cover-mask" data-lightbox="worktrip" href="images/works/preview-title-8_img-21.png" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-case-03" role="button" data-slide="prev"><span class="glyphicon-chevron-left"></span><span class="sr-only">Prev</span></a>
+                    <a class="right carousel-control" href="#carousel-case-03" role="button" data-slide="next"><span class="glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                </div>
+            </div>
+            <div class="h-abs" data-compon="pair" style="left:850px;top:10694px;"><a style="display:block;width:46px;height:26px;text-decoration:none;outline:none;" data-toggle="modal" data-target="#J_student_work_01" href="javascript:void(0);"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:850px;top:10878px;"><a style="display:block;width:46px;height:26px;text-decoration:none;outline:none;" data-toggle="modal" data-target="#J_student_work_02" href="javascript:void(0);"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:850px;top:11063px;"><a style="display:block;width:46px;height:26px;text-decoration:none;outline:none;" data-toggle="modal" data-target="#J_student_work_03" href="javascript:void(0);"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:1520px;top:10694px;"><a style="display:block;width:46px;height:26px;text-decoration:none;outline:none;" data-toggle="modal" data-target="#J_student_work_04" href="javascript:void(0);"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:1520px;top:10878px;"><a style="display:block;width:46px;height:26px;text-decoration:none;outline:none;" data-toggle="modal" data-target="#J_student_work_05" href="javascript:void(0);"></a></div>
+            <div class="h-abs" data-compon="pair" style="left:1520px;top:11063px;"><a style="display:block;width:46px;height:26px;text-decoration:none;outline:none;" data-toggle="modal" data-target="#J_student_work_06" href="javascript:void(0);"></a></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="J_student_work_01" tabindex="-1" role="dialog" style="display: none;z-index: 1042;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p class="student-leaveword">
+                <strong>B-04-嘟嘟</strong><br />
+                -<br />
+                其实一直在纠结写着什么，后来发现话太多，感觉有点碎碎念了。<br />
+                -<br />
+原本报名只是一时兴起，觉得会手绘的人都是大佬。等真正接触了之后发现这条路也不是那么的风光。哈哈哈哈，各中的辛酸泪只有自己知道。但是还是很庆幸自己遇到的是点奥，老师和助教们还有各自组的组长都很棒很贴心又非常细致！经常给我们加课，有问题都是第一时间解决！给我们准备各种优秀的福利，给我们发积分礼品，给我们找其他的大佬上课！各种分享的东西真的太多了太多了！！陪伴着我们一步步从最初什么都不会的渣渣走向入门的渣渣！<br />
+                -<br />
+哈哈哈哈，虽然每次画完老师布置的作业之后，问题依然多，画的还是渣，但是还是会很高兴，觉得是自我的一个突破！因为一开始觉得自己是画不出来的。内心真的是非常非常感谢！<br />
+                -<br />
+最后希望点奥和同学们都蒸蒸日上！走上人生巅峰！
+                </p>
             </div>
         </div>
     </div>
 </div>
+<div class="modal fade" id="J_student_work_02" tabindex="-1" role="dialog" style="display: none;z-index: 1042;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p class="student-leaveword">
+                <strong>L-11-吴羽倩</strong><br />
+                -<br />
+                2018年是我进入电商行业的第一年，这次的手绘班也是我第一次报班学习，总会觉得自己有很多地方还很欠缺，也有很多很多想学的，当初抱着能学到一点是一点的心态来，想着总会比当时的自己有所提升的。<br />
+                -<br />
+正式开课之后，感受到了阿赛老师认真严谨的上课态度，有一些线条和上色的细节也会跟我们细细地说明；助教西瓜绝对是一个“戏精”，总觉得下一秒就能导出一部人生大剧来，想想也是挺逗，哦对了，还有那独特的口音：你怕是活在梦里哟。还有其他助教，平时为我们解答问题，批改作业，教我们一些小技巧，也是很尽职尽责，还有我们的小组长，超级温和nice的！群里总是有一些活跃的在聊天，虽然我平时不怎么参与，却也经常会看看他们聊了啥，一个个都好有趣。<br />
+                -<br />
+总觉得自己挺幸运的，第一次报班就遇到了这么尽心的团队，觉得自己比最初也学到了很多电商的创意逻辑和技巧手法，毕业以后一定会多加练习，争取越来越好的。希望点奥课堂可以越办越好，培养出更多的人才！
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="J_student_work_03" tabindex="-1" role="dialog" style="display: none;z-index: 1042;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p class="student-leaveword">
+                <strong>O-02-刘守梅</strong><br />
+                -<br />
+                时间过得好快，在点奥课堂学习手绘已经好几个月了。（又要煽情告白了，哈哈）在这里，所有的老师，助教和小组长们都非常用心的付出，真心的非常感谢你们，我看到阿赛老师给我们讲课时的认真、负责、耐心，仔细；看到西瓜只要每次有课程都会给我们一个一个私信，害怕我们忘记去上课，每天给我们找优秀插画，发福利（优秀插画）让我们提高审美；潘潘小组长耐心的督促我们教作业，还在群里给我们巩固阿赛老师上课的知识点，只能说，点奥课堂这个团队真的很认真、负责、耐心，知识点接受不了时宁愿多上几节课也要给我们补课，让我们真正学到东西，打心眼里很感谢点奥课堂这个团队，让我们觉得网课也真的会有这么好的老师，这么好的团队，这么负责、认真。特别喜欢听阿赛老师上课，看老师一点一点的给我们讲解，一点一点的画，喜欢瓜哥，每次好像都表现的很凶实则做的每件事都是想要我们学的更好，喜欢我们小组长潘潘，一起开麦一起写作业，喜欢11期的小伙伴们，一起吐槽一起画画。<br />
+                -<br />
+我一直是喜欢画画的，为了兴趣也为了升职加薪，来到点奥课堂，在这里收获了很多很多。最后，祝愿点奥课堂新的一年越来越好，每个小伙伴们也都越来越好，画的越来越棒，（画画路上，苦而艰难；唯有热爱，方能砥砺路途漫长）。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="J_student_work_04" tabindex="-1" role="dialog" style="display: none;z-index: 1042;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p class="student-leaveword">
+                <strong>R-00-远小志</strong><br />
+                -<br />
+                点奥课堂，对于我来说已经超过了普通培训的意义。11期是一段难得的记忆，认识一群在画画上积极努力的同学们，每个人身上都有很多的优点，并非单纯的技艺方面，性格也很纯粹，仿佛回到了求学阶段。彼此都会知无不言的交流。<br />
+                -<br />
+                一个用心做培训的团队，遇上一群真心求学的朋友，是最有缘分的事情。<br />
+                -<br />
+未来的时光里，我会一直记得阿赛老师、西瓜、十九、花姐、超人老师五人组，也会一直记得我们的组长群，还有永远的R小组。我在这个大学期里，感受到各方的善意，也很衷心的希望每一个人，在未来的日子里，以梦为马，妙笔生花。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="J_student_work_05" tabindex="-1" role="dialog" style="display: none;z-index: 1042;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p class="student-leaveword">
+                <strong>L-04-K</strong><br />
+                -<br />
+                时光荏苒，不知不觉三个月过去了，虽然我的手绘能力还是很渣，但是这个团队给了很多的支持与鼓励。<br />
+                -<br />
+                虽然我们素未蒙面，但是我们对于手绘有同样的渴望。抱着相同的目标，做着同样的事情，努力让自己成为更好的人而不懈努力着。<br />
+                -<br />
+                特别感谢阿赛老师，辛苦为我们备课，每次熬到深夜只为给我们带来优质的听课体验。第一次线上学习，第一次学手绘，我觉得我很幸运，遇到这么好的团队。<br />
+                -<br />
+                骚气的西瓜，整天在群里说不停，目的却只有一个，让我们不负时光，在有限的时间里变的更好，谢谢助教大大。<br />
+                -<br />
+                最后，当然要好好感谢我亲爱的小组长啦，虽然每次交作业都是各种催，但是我依然爱你奥，衷心的希望L组的宝宝，越来越厉害，在设计领域有自己的一番做为。这不是结束，而是开始，年后三个月的课程，我会全力以赴哒。<br />
+                -<br />
+祝愿点奥课堂越来越好2019新年快乐~~~
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="J_student_work_06" tabindex="-1" role="dialog" style="display: none;z-index: 1042;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p class="student-leaveword">
+                <strong>L-05-可乐</strong><br />
+                -<br />
+                课程即将结束了，首先我很庆幸自己当初“排除万难”报了课程。报课程之前我就总是想要经常画一下啊，然而日复一日，并未能战胜自己，开启自己的画画时光。报了课程之后，由于努力还不够，掌握的还不是很好，但是至少可以提笔，敢于去画。就好像滑雪一样，放开胆子迈出第一步，后面只要多练习就好了。正如我们的口号那样，“画下去就好了”嗯嗯，画下去就好了~~~<br />
+                -<br />
+                从一开始可能只是会描摹一个小的卡通形象，线条磕磕绊绊。到现在线条流畅很多，并且自己能独立完成一个手绘首页，感觉自己进步很大哦~要感谢阿赛老师，感谢西瓜~感谢十九~感谢超人老师~感谢我们L组最最亲爱的组长。阿赛老师讲课很用心，画的真是超级好（我要多少年才能达到老师的程度~5年可以不~）。西瓜就总是给我们打鸡血，好多次，很多很多次我想放弃的时候，看到西瓜在群里发的话，我就默默的选择了坚持~另外西瓜真的很细心，很贴心哦~西瓜的讲话方式我越来越喜欢了，给大家带来欢乐，带来能量，笔芯。<br />
+                -<br />
+                小十九应该是个女孩纸吧，，课程结束了，我还没有搞清楚，但是99.999999%是女生喽~刚开始我总麻烦她，有什么问题，她都会帮我解决掉~~~应该是很温柔的那种或者人美歌甜的那种。<br />
+                -<br />
+                最后，就是我们组长啦！！！组长辛苦了~组长真的是很辛苦了我感觉，组长支撑着我们这个组~提醒我们上课，交作业~总是给我们分享好东西，给我们分享经验。如果没有组长，我那个首页真真的完不成。那是周六的下午，我在公司加班，画到崩溃，遇到了瓶颈，当时内心真的是超级煎熬，很难过痛苦。我组长帮我指点了下，不止是说说那种，还帮我在稿子上修改了。然后我就有了信心，看到了希望，坚持画完了~还评上了优秀作业呢~谢谢组长哦~<br />
+                -<br />
+                最后还要感谢阿赛老师，给予我知识，给我目标和能量。感谢西瓜，十九，早安组长，让我坚持画画，并且慢慢的爱上了画画，画下去就好了~~~<br />
+                -<br />
+最后自我总结了。还是不够努力。应该可以更努力才好。好多次作业都没有交哦，也应该可以学到更多的~目前还没能完全爱上画画~我继续努力~从交作业开始，先把作业做完，我想进群，和大家一起继续学习努力，和小伙伴们共同成长~加油!!!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="https://github.com/krewenki/jquery-lightbox/raw/master/jquery.lightbox.js"></script>-->
+<link href="https://cdn.bootcss.com/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script>
+function contactQQ(){
+    window.open('http://wpa.b.qq.com/cgi/wpa.php?ln=2&amp;uin=2515806314', '_blank', 'height=544, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');
+}
+$(document).ready(function(){
+    lightbox.option({
+        'albumLabel': 'Image %1 of %2',
+        'wrapAround': true
+    })
+});
+</script>
